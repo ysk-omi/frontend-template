@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <% include('./_function') %><% include('./const/_path') %><% include('./const/_url') %><% include('./const/_siteData') %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- SITE_DATA.title %></title>
+    <meta name="description" content="<%- SITE_DATA.description %>" />
+    <meta name="keywords" content="<%- SITE_DATA.keywords %>" />
+    <link rel="stylesheet" href="<%- PATH.assets %>css/style.css" />
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%- SITE_DATA.url %>index.html" />
+    <meta property="og:title" content="<%- SITE_DATA.title %>" />
+    <meta property="og:image" content="<%- SITE_DATA.url %>assets/images/common/ogp.png" />
+    <meta property="og:description" content="<%- SITE_DATA.description %>" />
+    <meta property="og:site_name" content="<%- SITE_DATA.site_name %>" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<%- SITE_DATA.url %>index.html" />
+    <meta name="twitter:title" content="<%- SITE_DATA.title %>" />
+    <meta name="twitter:description" content="<%- SITE_DATA.description %>" />
+    <meta name="twitter:image" content="<%- SITE_DATA.url %>assets/images/common/ogp.png" />
+    <!-- Font -->
+
+    <!-- Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+  </head>
+  <body>
+    <header>ヘッダー</header>

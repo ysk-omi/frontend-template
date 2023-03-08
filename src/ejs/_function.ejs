@@ -1,0 +1,28 @@
+<% 
+sliceText = function (text, modifier = '') {
+  let result = '';
+  for(var i = 0; i < text.length; i++) {
+    let s = text[i];
+    if(modifier) {
+      if(s != ' ') {
+        result += '<span class="' + modifier + '">' + s + '</span>';
+      } else {
+        result += '<span class="' + modifier + '">' + '&nbsp;' + '</span>';
+      }
+    } else {
+      if(s != ' ') {
+        result += '<span>' + s + '</span>';
+      } else {
+        result += '<span>' + '&nbsp;' + '</span>';
+      }
+    }
+  }
+  return result;
+}
+
+is_blank = function(isBlank = true) {
+  if(isBlank) {
+    return 'target="_blank" rel="noopener noreferrer"'
+  }
+}
+%>
