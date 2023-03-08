@@ -59,15 +59,19 @@ $ npm run format
 ├── .gitignore
 ├── gulpfile.js
 ├── package.json
-├── gulp
+├── gulp // gulpの設定ファイル
 │   ├── tasks
-│   ├── config.js
-│   └── plugins.js
+│   ├── config.js // gulp内の設定を一括管理するファイル
+│   └── plugins.js // 使用するプラグインをまとめるファイル
 ├── src
 │   ├── images
-│   ├── js
+│   ├── js // 
+│   │   ├── const // 定数やパラメータを管理するフォルダ
+│   │   │   ├── config.js //サイトのモード設定など、裏側で管理したい情報を入れるファイル
+│   │   │   ├── constants.js //定数を記述するためのファイル
+│   │   │   └── params.js //パラメータ管理用ファイル（lil-guiを使用）
 │   │   └── modules
-│   ├── scss
+│   ├── scss // FLOCSSベースでファイル分けを行っている
 │   │   ├── 00_base
 │   │   │   ├── _base.scss
 │   │   │   ├── _functions.scss
