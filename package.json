@@ -61,8 +61,10 @@
     "style-loader": "^0.23.1",
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1",
+    "webpack": "^4.46.0",
     "webpack-cli": "^4.0.1",
-    "webpack-glsl-loader": "^1.0.1"
+    "webpack-glsl-loader": "^1.0.1",
+    "webpack-stream": "^6.1.2"
   },
   "private": true,
   "dependencies": {
@@ -73,7 +75,6 @@
     "lil-gui": "^0.18.0",
     "locomotive-scroll": "^4.1.4",
     "reset-css": "^5.0.1",
-    "ua-parser-js": "^1.0.34",
-    "webpack": "^4.46.0"
+    "ua-parser-js": "^1.0.34"
   }
 }
